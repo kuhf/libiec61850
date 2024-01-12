@@ -69,7 +69,7 @@
 /* #define CONFIG_ETHERNET_INTERFACE_ID "en0"  // OS X uses enX in place of ethX as ethernet NIC names. */
 
 /* Set to 1 to include GOOSE support in the build. Otherwise set to 0 */
-#cmakedefine01 CONFIG_INCLUDE_GOOSE_SUPPORT
+#define CONFIG_INCLUDE_GOOSE_SUPPORT 1
 
 /* Set to 1 to include Sampled Values support in the build. Otherwise set to 0 */
 #define CONFIG_IEC61850_SAMPLED_VALUES_SUPPORT 1
@@ -222,7 +222,7 @@
 #define CONFIG_PROVIDE_OLD_FC_DEFINES 0
 
 /* Support user acccess to raw messages */
-#cmakedefine01 CONFIG_MMS_RAW_MESSAGE_LOGGING
+#define CONFIG_MMS_RAW_MESSAGE_LOGGING 1
 
 /* Allow to set the virtual filestore basepath for MMS file services at runtime with the
  * MmsServer_setFilestoreBasepath function
